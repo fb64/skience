@@ -20,3 +20,7 @@ This repository contains the notebooks I used for [my talk about Data science in
 [Duckdb Dataftame notebook](./src/notebook/duckdb_dataframe.ipynb) show advanced usages of kotlin dataframe with duckDB.
 
 To run this notebook you must run [import data notebook](./src/notebook/import_data.ipynb). It will create a duckDB database file that contains New York yellow taxi trip for 5 years which represents about 10GB and 400 millions database rows  
+
+
+## Docker
+To run notebooks with [jupyter](https://jupyter.org/) in docker use `docker compose up` command from the base directory. 

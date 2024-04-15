@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  jupyter-notebook:
+    build: ./src/docker/
+    volumes:
+      - ./data:/tmp/data
+      - ./src/notebook:/home/jovyan/work
+    environment:
+      - SKIENCE_DATA_FOLDER=/tmp/data
+      - JAVA_TOOL_OPTIONS="--add-opens=java.base/java.nio=ALL-UNNAMED"
+    ports:
+      - "8888:8888"
