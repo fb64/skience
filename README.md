@@ -1,7 +1,7 @@
 # sKience
 sKience is a demonstration project illustrating the utilization of a modern technology stack to facilitate the practice of data science with Kotlin effortlessly.
 
-This repository contains the notebooks I used for [my talk about Data science in Kotlin at Devoxx France 2024](https://www.devoxx.fr/schedule/talk/?id=12562).
+This repository contains the notebooks I used for my talk (in 🇫🇷) about [Data science in Kotlin at Devoxx France 2024](https://www.youtube.com/watch?v=VJRPiJqng2U)
 
 ## Introduction
 
