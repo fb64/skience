@@ -1,16 +1,13 @@
 
-FROM jupyter/base-notebook
+FROM quay.io/jupyter/base-notebook
 
 USER root
 
-# Install java 17
-RUN apt-get update \
-    && echo "Updated apt-get" \
-    && apt-get install -y openjdk-17-jre \
-    && echo "Installed openjdk 17"
+# Install java 21
+RUN apt-get update && apt-get install -y openjdk-21-jre && apt-get clean
 
 # Install kotlin kernel for jupyter using conda
-RUN conda install -y -c jetbrains kotlin-jupyter-kernel && echo "Kotlin Jupyter kernel installed via conda"
+RUN pip install kotlin-jupyter-kernel
 
 # Let's change to  "$NB_USER" command so the image runs as a non root user by default
 USER ${NB_UID}
